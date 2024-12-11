@@ -2,7 +2,11 @@
   "name": "@niclas/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve": "npx nx serve mf-visualization",
+    "nx:graph": "npx nx graph",
+    "nx:show": "npx nx show project mf-visualization"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~19.0.0",
