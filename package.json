@@ -4,6 +4,7 @@
   "license": "MIT",
   "scripts": {
     "serve": "npx nx serve mf-visualization",
+    "build": "npx nx run-many -t build",
     "nx:graph": "npx nx graph",
     "nx:show": "npx nx show project mf-visualization"
   },
