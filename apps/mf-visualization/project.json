@@ -8,12 +8,16 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/mf-visualization",
         "index": "apps/mf-visualization/src/index.html",
         "browser": "apps/mf-visualization/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/mf-visualization/tsconfig.app.json",
         "assets": [
           {
@@ -21,7 +25,10 @@
             "input": "apps/mf-visualization/public"
           }
         ],
-        "styles": ["apps/mf-visualization/src/styles.css"],
+        "styles": [
+          "@angular/material/prebuilt-themes/azure-blue.css",
+          "apps/mf-visualization/src/styles.css"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -71,7 +78,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/mf-visualization/jest.config.ts"
       }
